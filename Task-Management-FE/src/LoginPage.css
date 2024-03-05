@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .welcome-text {
+    font-family: 'YourCursiveFont', cursive;
+    font-size: 5rem; 
+    font-weight: 600; 
+    color: #333; 
+    text-align: left;
+    margin-bottom: 2rem; 
+    margin-right: 20rem;
+  }
+  .login-form {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #ed5412;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #e27827;
+    color: white;
+  }
+  
+  .login-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Add a bit of responsiveness */
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 20px;
+    }
+  }
+  

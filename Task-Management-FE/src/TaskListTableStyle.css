@@ -1,0 +1,181 @@
+.blob-background {
+    background-color: #f0f0f0; /* Base color */
+    border-radius: 43% 57% 33% 67% / 55% 48% 52% 45%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .task-list-header .left {
+    align-self: flex-start;
+  }
+  
+  .task-list-header .right {
+    align-self: flex-end;
+  }
+  
+
+.btn-create-new {
+    padding: 10px 15px;
+    background-color: #3996ab; /* Green background */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin: 0 0 20px; /* Margin at the bottom */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-create-new:hover, .btn-create-new:focus {
+    background-color: #e95911; /* Darker shade of green on hover/focus */
+    color:#ffffff;
+    outline: none;
+  }
+  
+  /* Ensure the button is aligned with the task list title */
+  .task-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Change to stretch to ensure full width of header */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* text-align: right; Center align the container contents */
+  }
+  
+  .task-list-title {
+    display: inline-block; /* Inline block for proper alignment */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem; /* Choose a size that fits your design */
+    margin-right: 10px; /* Space between title and button */
+  }
+  
+  /* Responsive adjustments if needed */
+  @media (max-width: 768px) {
+    .task-list-title {
+      display: block; /* Stack title and button on smaller screens */
+      margin-bottom: 10px; /* Space between title and button on smaller screens */
+    }
+  
+    .btn-create-new {
+      display: inline-block; /* Center the button below the title */
+    }
+  }
+  
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Full width */
+  padding: 1rem; /* Adjusted padding */
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0; /* Align to the top */
+}
+
+.task-list-title {
+  color: #000000;
+  text-align: center; /* Center title text */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem; /* Larger font size for title */
+}
+
+.task-list-table-container {
+  width: 100%; /* Full width */
+  overflow-x: auto;
+  box-shadow: 0 2px 4px #ffffff1a; /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for modern look */
+  background: #fff; /* White background for the card */
+}
+
+.task-list-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+}
+
+.task-list-table th,
+.task-list-table td {
+  text-align: left;
+  padding: 1rem; /* Increased padding for spacious look */
+  border: 1px solid #ffffff;
+}
+
+.task-list-table thead {
+  background-color: #efefef; /* Light grey background for headers */
+  color: #333; /* Dark text for contrast */
+}
+
+.task-list-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.task-list-table tbody tr:hover {
+  background-color: #ffffff; /* Lighter grey on hover for interactivity */
+}
+
+.task-list-actions .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform for interaction */
+  margin-right: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none; /* Remove borders for a cleaner look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent with card shadow */
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.btn-delete:hover {
+  background-color: #da190b;
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.loader,
+.task-list-empty {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem; /* Larger font size for loader and empty message */
+}
+
+@media (max-width: 768px) {
+  .task-list-container {
+    padding: 1rem;
+  }
+
+  .task-list-actions .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem; /* Adjust size for mobile */
+  }
+
+  .task-list-title {
+    font-size: 2rem; /* Slightly smaller font size for mobile */
+  }
+}
